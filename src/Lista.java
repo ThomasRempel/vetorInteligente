@@ -1,15 +1,15 @@
 public class Lista {
     private double vetor[];
-    private int elementos;
+    private int dados;
 
     public Lista(int tamanhoLista) {
         this.vetor = new double[tamanhoLista];
-        this.elementos = 0;
+        this.dados = 0;
     }
 
-    public void adicionar(double numero) {
-        this.vetor[this.elementos] = numero;
-        this.elementos++;
+    public void adicionar(double unidade) {
+        this.vetor[this.dados] = unidade;
+        this.dados++;
     }
 
     public int tamanho() {
@@ -24,14 +24,14 @@ public class Lista {
     }
 
     public double get(int posicao) {
-        if (posicao >= elementos) {
+        if (posicao >= dados) {
             System.out.println("índice inválido");
         }
         return this.vetor[posicao];
     }
 
-    public void set(int posicao, double elemento) {
-        this.vetor[posicao] = elemento;
+    public void set(int posicao, double dado) {
+        this.vetor[posicao] = dado;
     }
 
 
